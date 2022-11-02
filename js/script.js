@@ -7,8 +7,8 @@ createApp ({
             messaggio: 'ciao a tutti',
             altroMessaggio: 'con Vue',
             coloreTesto: '',
-            path: 'img/cani.jpg',
-            
+            path: 'img/',
+            imgName: 'cani.jpg',
 
         }
     },
@@ -16,5 +16,8 @@ createApp ({
         cambiaColore(){
             this.coloreTesto = "rosso"
         },
+        changeImg(newImgName){
+            this.imgName = newImgName
+        }
     }
 }).mount('#app')

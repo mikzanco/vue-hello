@@ -12,12 +12,13 @@
 
     <div id="app">
         <h1>{{messaggio}} questa è la prima repo <span :class="coloreTesto">{{altroMessaggio}}</span></h1>
-        <input type="text" v-model="messaggio">
-        <button @click="cambiaColore()">Cambia colore al testo</button>
+        <input type="text" v-model="messaggio"><br>
+        <button @click="cambiaColore()">Cambia colore al testo</button> <br>
 
 
         <input type="text" v-model="imgName">
-        <img :src="path" alt="">
+        <button @click="changeImg('newImgName')">Cambia immagine</button>
+        <img :src="path + imgName" alt="">
     </div>
     <script src="js/script.js"></script>
 </body>
