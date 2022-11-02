@@ -7,6 +7,8 @@ createApp ({
             messaggio: 'ciao a tutti',
             altroMessaggio: 'con Vue',
             coloreTesto: '',
+            path: 'img/cani.jpg',
+            
 
         }
     },
