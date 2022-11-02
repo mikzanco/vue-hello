@@ -11,7 +11,9 @@
 <body>
 
     <div id="app">
-        <h1>{{messaggio}} questa è la prima repo {{altroMessaggio}}</h1>
+        <h1>{{messaggio}} questa è la prima repo <span :class="coloreTesto">{{altroMessaggio}}</span></h1>
+        <input type="text" v-model="messaggio">
+        <button @click="cambiaColore()">Cambia colore al testo</button>
     </div>
     <script src="js/script.js"></script>
 </body>

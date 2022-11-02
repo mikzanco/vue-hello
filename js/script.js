@@ -5,7 +5,14 @@ createApp ({
     data(){
         return{
             messaggio: 'ciao a tutti',
-            altroMessaggio: 'con Vue'
+            altroMessaggio: 'con Vue',
+            coloreTesto: '',
+
         }
+    },
+    methods: {
+        cambiaColore(){
+            this.coloreTesto = "rosso"
+        },
     }
 }).mount('#app')
