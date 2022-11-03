@@ -9,7 +9,7 @@ createApp ({
             coloreTesto: '',
             path: 'img/',
             imgName: 'cani.jpg',
-            isTestoShow: false,
+            isTestoShow: true,
         }
     },
     methods: {
@@ -20,7 +20,10 @@ createApp ({
             this.imgName = newImgName
         },
         changeImg(none){
-            isTestoShow: true
+            this.path
+        },
+        toggleTesto(){
+            this.isTestoShow = !this.isTestoShow
         }
     }
 }).mount('#app')

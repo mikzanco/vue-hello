@@ -20,8 +20,8 @@
         <button @click="changeImg('newImgName')">Cambia immagine</button>
         <img :src="path + imgName" alt="">
 
-        <button @click="changeImg('none')">hide img</button>
-        <h4 v-show="isTestoShow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis repellat id. Omnis quisquam nostrum voluptates dolores consequuntur ex sit!</h4>
+        <button @click="toggleTesto()">hide text</button>
+        <p v-show="isTestoShow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis repellat id. Omnis quisquam nostrum voluptates dolores consequuntur ex sit!</p>
 
     </div>
     <script src="js/script.js"></script>
